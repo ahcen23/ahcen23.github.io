@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. [Your Name] | Associate Professor</title>
+    <style>
+        /* --- STYLES (CSS) --- */
+        :root {
+            --primary-color: #2c3e50; /* Dark Blue/Gray */
+            --accent-color: #2980b9;  /* Professional Blue */
+            --text-color: #333333;
+            --light-gray: #ecf0f1;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            color: var(--primary-color);
+        }
+
+        /* Header Layout */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--light-gray);
+        }
+
+        .header-info h1 {
+            margin: 0 0 5px 0;
+            font-size: 2.5em;
+        }
+
+        .title {
+            font-size: 1.2em;
+            color: #555;
+            margin: 0 0 15px 0;
+        }
+
+        .nav-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+            border: 1px solid var(--accent-color);
+            padding: 5px 12px;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        /* Content Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Publications List */
+        .pub-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .pub-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            text-indent: -20px;
+        }
+
+        .pub-title {
+            font-weight: bold;
+        }
+
+        .pub-authors {
+            color: #555;
+        }
+
+        .pub-venue {
+            font-style: italic;
+            color: #27ae60;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--light-gray);
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links a {
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/160" alt="Dr. [Your Name]" class="profile-pic">
+        <div class="header-info">
+            <h1>Dr. [Your Name]</h1>
+            <p class="title">Associate Professor of [Your Field]<br>
+            [Your University Name]</p>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#publications">Publications</a>
+                <a href="#teaching">Teaching</a>
+                <a href="[Link to your PDF CV]" target="_blank">CV (PDF)</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an Associate Professor in the Department of [Department Name] at [University Name]. My research focuses on [Brief summary of your research, e.g., machine learning, environmental policy, medieval history].</p>
+        <p>Before joining [Current University], I completed my Ph.D. at [Previous University] and worked as a postdoctoral researcher at [Lab/Institute].</p>
+        
+        <h3>Research Interests</h3>
+        <ul>
+            <li>Interest Area 1</li>
+            <li>Interest Area 2</li>
+            <li>Interest Area 3</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <p><em>For a full list of my publications, please visit my <a href="[Your Google Scholar Link]" target="_blank">Google Scholar profile</a>.</em></p>
+        
+        <ul class="pub-list">
+            <li>
+                <span class="pub-title">"The Title of Your Most Amazing Paper"</span><br>
+                <span class="pub-authors"><strong>[Your Last Name], [Initial].</strong>, & Colleague, J. (2025).</span><br>
+                <span class="pub-venue">Journal of Academic Excellence, 12(3), 45-67.</span> 
+                <a href="[Link to DOI or PDF]">[PDF]</a>
+            </li>
+            <li>
+                <span class="pub-title">"Another Groundbreaking Study"</span><br>
+                <span class="pub-authors">Smith, A., & <strong>[Your Last Name], [Initial].</strong> (2024).</span><br>
+                <span class="pub-venue">International Conference on Important Things.</span>
+                <a href="[Link to DOI or PDF]">[DOI]</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching</h2>
+        <p>I am passionate about teaching and mentoring students. Currently, I teach the following courses:</p>
+        <ul>
+            <li><strong>[Course Code 101]: Introduction to [Topic]</strong> (Fall semesters)</li>
+            <li><strong>[Course Code 405]: Advanced Seminar in [Topic]</strong> (Spring semesters)</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            <strong>Email:</strong> [your.email]@university.edu<br>
+            <strong>Office:</strong> Room [Number], [Building Name]<br>
+            <strong>GitHub:</strong> <a href="[Your GitHub URL]">[Your GitHub Username]</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dr. [Your Name]. Last updated: March 2026.</p>
+    </footer>
+
+</body>
+</html>
